@@ -4,7 +4,7 @@ defmodule Greeter do
   end
 
   def greet do
-    answer = String.trim(get_name)
+    answer = get_name()
 
     case answer do
       "" -> IO.puts("Fine, don't answer. Hello, World!")
@@ -12,3 +12,6 @@ defmodule Greeter do
     end
   end
 end
+
+
+Greeter.greet
